@@ -14,3 +14,130 @@ body {
 }
 
 /* add styles here */
+header {
+   background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg');
+   background-size: cover;
+   width: 100%;
+   min-height: 500px;
+ }
+ 
+ nav {
+   background-image: url('images/logo.svg'); 
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 10px 5px;
+   padding: 20px;
+   height: 100px;
+ }
+ /* Remove list bullets and set the list items horizontally */
+nav li {
+   display: inline-block;
+   list-style-type: none;
+ }
+ 
+ /* Move the ul to the right to avoid overlapping with the logo */
+ nav ul {
+   margin-left: 80px;
+ }
+ 
+ /* Style the navigation links */
+ nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+ }
+ 
+ nav a:visited {
+   color: #8662c7;
+ }
+ 
+ nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+ }
+ /* Position the hero text */
+header div {
+   margin: 100px 0 0 80px;
+   color: white;
+ }
+ 
+ /* Style the hero heading and paragraph */
+ header h2 {
+   font-size: 48px;
+   margin-bottom: 0.5rem;
+ }
+ 
+ header p {
+   font-size: 24px;
+   margin-bottom: 1.5rem;
+ }
+ 
+ /* Style the button */
+ header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+ }
+ 
+ header div a:hover {
+   background-color: #8662c7;
+ }
+ /* Use flexbox to manage the layout of the cards */
+main {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: space-between;
+ }
+ 
+ /* Style each card */
+ .card {
+   display: inline-block;
+   width: calc(33.33% - 10px); /* Adjust width to fit flexbox */
+   background-color: white;
+   margin: 10px 5px;
+ }
+ 
+ /* Style the content inside the card */
+ .card div {
+   padding: 20px 5px;
+ }
+ 
+ /* Make images full-width */
+ .card img {
+   width: 100%;
+ }
+ 
+ /* Style the description and heading */
+ .card div.description {
+   font-size: 12px;
+ }
+ 
+ .card h3 {
+   font-size: 14px;
+ }
+ /* Style social section */
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+ }
+ 
+ /* Style the social icons */
+ .social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   margin-right: 10px;
+ }
+ 
+ /* Background images for heart and comment icons */
+ .social .heart {
+   background-image: url('./images/heart.png');
+ }
+ 
+ .social .comment {
+   background-image: url('./images/comment.png');
+ }
